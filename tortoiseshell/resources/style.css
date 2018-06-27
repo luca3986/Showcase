@@ -1,0 +1,302 @@
+/*Universl*/
+
+html{
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4px;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width : 1047px){
+  .container{
+    width: 100%;
+    margin: 0 0;
+  }
+
+}
+
+h1, h4{
+  font-weight: bold;
+}
+
+span{
+  font-size: 1rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+a{
+  font-size: 1rem;
+}
+
+/*Main Banner*/
+
+header{
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  z-index: 5;
+  position: relative;
+  top: 1rem;
+}
+
+@media only screen and (max-width : 1047px){
+  header{
+    position: static;
+  }
+
+}
+
+@media only screen and (max-width : 470px){
+  .company span{
+    display: none;
+  }
+}
+
+.company{
+  display: flex;
+  align-items: center;
+}
+
+.company img{
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-width : 470px){
+  nav ul{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 0 2rem 0 0;
+}
+
+.main-banner{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  background-position: 45%;
+  height: 30rem;
+  text-align: right;
+}
+
+@media only screen and (max-width : 1047px){
+  .main-banner{
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width : 470px){
+  .main-banner{
+    height: 17rem;
+    background-position: 20%;
+    text-align: center;
+  }
+}
+
+.headline{
+  background-color: white;
+  text: black;
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  position: relative;
+  right: -2rem;
+}
+
+@media only screen and (max-width : 1047px){
+  .headline{
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    display: inline-block;
+    position: static;
+  }
+}
+
+@media only screen and (max-width : 470px){
+  .headline{
+    margin-top: 9rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  .headline h1{
+    font-size: 1rem;
+  }
+}
+
+.headline h1{
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width : 1047px){
+  .headline h1{
+    font-size: 1.33rem;
+    white-space: nowrap;
+  }
+}
+/*Company*/
+
+.company-info{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+@media only screen and (max-width : 470px){
+  .icons{
+    flex-flow: column nowrap;
+    margin: 3.77rem 0;
+    align-content: space-between;
+  }
+}
+
+.icon{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  margin-right: 6rem;
+}
+
+@media only screen and (max-width : 470px){
+  .icon{
+    margin: 0 0 1.54rem 0;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .icon.truck{
+    margin:0;
+  }
+
+  .icon.truck span{
+    padding-bottom: 0;
+  }
+
+  .icon.ruler{
+
+  }
+  .icon span{
+    font-size: 0.77rem;
+    font-weight: normal;
+    padding: 1rem;
+  }
+}
+
+.icon-image img{
+  max-width: 5rem;
+}
+
+.icon nav{
+  whi
+}
+
+#sheet{
+  width: 3.5rem;
+}
+
+.phylosophy{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width : 470px){
+  .phylosophy{
+    display: block;
+    width: 100%;
+  }
+  .phylosophy div{
+    width: 100% !important;
+  }
+  .phylo{
+    margin: 0 0 4rem 0;
+  }
+  .phylosophy h3{
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p{
+    font-size: 0.77rem;
+  }
+}
+
+.phylosophy h3{
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+.phylosophy div{
+  width: 35%;
+}
+
+.phylo{
+  margin-right: 5%;
+}
+
+/*Company*/
+
+footer{
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img{
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width : 470px){
+  footer span{
+    display: none;
+  }
+  footer img{
+    padding: 4rem;
+  }
+  footer{
+    justify-content: center;
+  }
+  }
